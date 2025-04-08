@@ -4,29 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Learning Repository</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        .highlight {
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Welcome to My Learning Repository</h1>
+    
+    <div id="welcome-message" class="success"></div>
     
     <p>This is my first GitHub project where I'm learning about:</p>
     
@@ -41,8 +24,22 @@
     <div class="highlight">
         <h2>My Goals</h2>
         <p>I'm using this repository to track my progress as I learn GitHub and development skills.</p>
+        
+        <button class="toggle-button" data-section="more-info">Show/Hide More Info</button>
+        
+        <div id="more-info" style="display: none; margin-top: 15px;">
+            <p>This section demonstrates the JavaScript toggle functionality. Here I can hide additional information that's only shown when requested.</p>
+            <p>In future updates, I'll add more complex interactions and features.</p>
+        </div>
+    </div>
+
+    <div class="warning">
+        <h3>Learning in Progress</h3>
+        <p>This repository is constantly evolving as I learn new concepts and techniques.</p>
     </div>
 
     <p>Last updated: April 2025</p>
+
+    <script src="script.js"></script>
 </body>
 </html>
